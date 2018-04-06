@@ -4,7 +4,7 @@
 
 def highest_product(array_of_ints)
   total = 1
-  sorted_array = array_of_ints.sort!
+  sorted_array = array_of_ints.sort.reverse
   p sorted_array
   sorted_array[0..2].each do |num|
     total *= num
